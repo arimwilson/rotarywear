@@ -2,7 +2,7 @@
 <resources>
 
     <string name="app_name">RotaryWear</string>
-    <string name="hello_world">Hello world!</string>
+    <string name="explanatory_text">RotaryWear is an app that allows you to experience the latest in 1890s technology, the rotary dial, on the latest in 2010s technology, the smartwatch!</string>
     <string name="action_settings">Settings</string>
 
 </resources>
