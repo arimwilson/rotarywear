@@ -9,6 +9,5 @@ public class RotaryWear extends Activity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        final FrameLayout frame_layout = (FrameLayout) findViewById(R.id.frame_layout);
     }
 }

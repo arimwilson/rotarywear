@@ -1,7 +1,33 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/linear_layout"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:id="@+id/frame_layout"
+    android:orientation="vertical"
     tools:context=".RotaryWear">
-</FrameLayout>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+
+        <View
+            android:layout_width="320dip"
+            android:layout_height="320dip"
+            android:layout_centerInParent="true"
+            android:background="@drawable/numbers" />
+
+        <View
+            class="com.ariwilson.rotarywear.RotaryView"
+            android:id="@+id/view"
+            android:layout_width="320dip"
+            android:layout_height="320dip"
+            android:layout_centerInParent="true" />
+
+        <View
+            android:layout_width="320dip"
+            android:layout_height="320dip"
+            android:layout_centerInParent="true"
+            android:background="@drawable/top" />
+    </RelativeLayout>
+</LinearLayout>
