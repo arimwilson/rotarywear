@@ -38,14 +38,14 @@ public class RotaryView extends View {
         canvas.save();
         rotor_drawable_.setBounds(
                 0, 0, rotor_drawable_.getIntrinsicWidth(), rotor_drawable_.getIntrinsicHeight());
-//        if (rotor_angle_ != 0) {
-//          canvas.rotate(rotor_angle_, x, y);
-//        }
+        if (rotor_angle_ != 0) {
+          canvas.rotate(rotor_angle_, x, y);
+        }
         rotor_drawable_.draw(canvas);
         canvas.restore();
     }
 
-    /*@Override
+    @Override
     public boolean onTouchEvent(MotionEvent event) {
         final float x0 = getWidth() / 2;
         final float y0 = getHeight() / 2;
@@ -109,7 +109,7 @@ public class RotaryView extends View {
                 break;
         }
         return super.onTouchEvent(event);
-    }*/
+    }
 
     private final Drawable rotor_drawable_;
     private final int r1_ = 50;
