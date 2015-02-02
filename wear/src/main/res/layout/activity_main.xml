@@ -17,8 +17,7 @@
             android:layout_centerInParent="true"
             android:background="@drawable/numbers" />
 
-        <View
-            class="com.ariwilson.rotarywear.RotaryView"
+        <com.ariwilson.rotarywear.RotaryView
             android:id="@+id/view"
             android:layout_width="320dip"
             android:layout_height="320dip"
