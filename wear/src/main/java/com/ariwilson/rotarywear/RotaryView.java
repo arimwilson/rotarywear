@@ -36,8 +36,7 @@ public class RotaryView extends View {
         int y = (getBottom() - getTop()) / 2;
 
         canvas.save();
-        rotor_drawable_.setBounds(
-                0, 0, rotor_drawable_.getIntrinsicWidth(), rotor_drawable_.getIntrinsicHeight());
+        rotor_drawable_.setBounds(0, 0, getWidth(), getHeight());
         if (rotor_angle_ != 0) {
           canvas.rotate(rotor_angle_, x, y);
         }
